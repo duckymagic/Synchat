@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Site Mockup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #282828;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+        /* Custom aspect ratio for video feed */
+        .aspect-video-feed {
+            aspect-ratio: 16 / 9;
+        }
+        /* Custom color for username highlight */
+        .text-username-orange {
+            color: #ff7700;
+        }
+        /* Custom background for username overlay */
+        .bg-username-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-[#1a1a1a] text-white font-sans flex flex-col min-h-screen">
+    <header class="bg-[#282828] py-1 text-center border-b border-[#333]">
+        <h1 class="text-2xl font-bold">Video Chat Mockup</h1>
+    </header>
+
+    <main class="flex-grow container mx-auto p-2.5 flex flex-col md:flex-row gap-2.5">
+        <section class="video-grid grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2.5 flex-grow max-h-[60vh] overflow-y-auto bg-[#333] p-2.5 rounded-lg">
+            <div class="video-feed bg-[#444] rounded-lg overflow-hidden aspect-video-feed flex justify-center items-center text-[#bbb] text-sm relative">
+                <img src="placeholder_user.png" alt="User Placeholder" class="w-full h-full object-cover">
+                <div class="username absolute bottom-1 left-1 bg-username-overlay px-1.5 py-0.5 rounded-sm text-[0.7em] font-semibold">User 1</div>
+            </div>
+            <div class="video-feed bg-[#444] rounded-lg overflow-hidden aspect-video-feed flex justify-center items-center text-[#bbb] text-sm relative">
+                <img src="placeholder_user.png" alt="User Placeholder" class="w-full h-full object-cover">
+                <div class="username absolute bottom-1 left-1 bg-username-overlay px-1.5 py-0.5 rounded-sm text-[0.7em] font-semibold">User 2</div>
+            </div>
+            <div class="video-feed bg-[#444] rounded-lg overflow-hidden aspect-video-feed flex justify-center items-center text-[#bbb] text-sm relative">
+                <img src="placeholder_user.png" alt="User Placeholder" class="w-full h-full object-cover">
+                <div class="username absolute bottom-1 left-1 bg-username-overlay px-1.5 py-0.5 rounded-sm text-[0.7em] font-semibold">User 3</div>
+            </div>
+            <div class="video-feed bg-[#444] rounded-lg overflow-hidden aspect-video-feed flex justify-center items-center text-[#bbb] text-sm relative">
+                <img src="placeholder_user.png" alt="User Placeholder" class="w-full h-full object-cover">
+                <div class="username absolute bottom-1 left-1 bg-username-overlay px-1.5 py-0.5 rounded-sm text-[0.7em] font-semibold">User 4</div>
+            </div>
+        </section>
+
+        <section class="chat-area flex flex-col bg-[#282828] rounded-lg p-2.5 min-h-[20vh] max-h-[40vh] md:flex-[0_0_300px] md:min-h-0 md:max-h-none">
+            <div class="chat-box flex-grow overflow-y-auto mb-2.5 pr-1.5">
+                <div class="message mb-1.5 leading-[1.4]"><span class="font-bold text-username-orange">User 1:</span> Hello!</div>
+                <div class="message mb-1.5 leading-[1.4]"><span class="font-bold text-username-orange">User 2:</span> Hi there!</div>
+                <div class="message mb-1.5 leading-[1.4]"><span class="font-bold text-username-orange">User 3:</span> How is everyone?</div>
+            </div>
+            <div class="chat-input flex gap-1.5">
+                <input type="text" placeholder="Type a message..." class="flex-grow p-2 border-none rounded bg-[#3a3a3a] text-white">
+                <button class="px-4 py-2 border-none rounded bg-[#ff7700] text-white hover:bg-[#e06c00]">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="controls bg-[#282828] p-2.5 flex justify-center gap-2.5 flex-wrap">
+        <button class="px-5 py-2.5 border-none rounded bg-[#555] text-white hover:bg-[#666]">Join Call</button>
+        <button class="px-5 py-2.5 border-none rounded bg-[#555] text-white hover:bg-[#666]">Leave Call</button>
+        <button class="px-5 py-2.5 border-none rounded bg-[#555] text-white hover:bg-[#666]">Settings</button>
+    </footer>
+</body>
+</html>
