@@ -6,88 +6,89 @@
     <title>My Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <meta name="theme-color" content="#0f172a"> <!-- bg-slate-900 -->
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-slate-900 text-slate-300">
     <header>
-        <nav class="bg-white p-4 shadow-md sticky top-0 z-50">
+        <nav class="bg-slate-800 p-4 shadow-md sticky top-0 z-50">
             <div class="container mx-auto flex flex-wrap justify-between items-center relative">
-                <div class="text-xl font-bold text-blue-600">MyLogo</div>
+                <div class="text-xl font-bold text-slate-100">MyLogo</div>
 
                 <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
 
-                <label for="mobile-menu-toggle" class="cursor-pointer md:hidden block p-2 rounded-md text-gray-700 hover:bg-gray-200">
+                <label for="mobile-menu-toggle" class="cursor-pointer md:hidden block p-2 rounded-md text-slate-300 hover:bg-slate-700">
                     <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                 </label>
 
-                <ul class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-white shadow-md py-2 z-20
+                <ul class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-slate-800 shadow-md py-2 z-20
                            md:peer-checked:hidden md:flex md:flex-row md:static md:w-auto md:shadow-none md:bg-transparent md:py-0 md:space-x-4">
-                    <li class="w-full md:w-auto"><a href="index.html" class="block text-center text-gray-700 hover:text-blue-500 py-2 md:px-3 md:py-2 border-b md:border-none font-semibold text-blue-600">Home</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/features.html" class="block text-center text-gray-700 hover:text-blue-500 py-2 md:px-3 md:py-2 border-b md:border-none">Features</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/pricing.html" class="block text-center text-gray-700 hover:text-blue-500 py-2 md:px-3 md:py-2 border-b md:border-none">Pricing</a></li>
-                    <li class="w-full md:w-auto"><a href="pages/contact.html" class="block text-center text-gray-700 hover:text-blue-500 py-2 md:px-3 md:py-2">Contact</a></li>
+                    <li class="w-full md:w-auto"><a href="index.html" class="block text-center text-slate-100 hover:text-blue-400 py-2 md:px-3 md:py-2 border-b border-slate-700 md:border-none font-semibold">Home</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/features.html" class="block text-center text-slate-300 hover:text-blue-400 py-2 md:px-3 md:py-2 border-b border-slate-700 md:border-none">Features</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/pricing.html" class="block text-center text-slate-300 hover:text-blue-400 py-2 md:px-3 md:py-2 border-b border-slate-700 md:border-none">Pricing</a></li>
+                    <li class="w-full md:w-auto"><a href="pages/contact.html" class="block text-center text-slate-300 hover:text-blue-400 py-2 md:px-3 md:py-2">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="bg-blue-600 text-white py-16 sm:py-20 px-4 text-center">
+        <section id="hero" class="bg-slate-900 text-white py-20 sm:py-28 px-4 text-center">
             <div class="container mx-auto">
-                <h1 class="text-3xl sm:text-4xl font-bold mb-4">Connect and Collaborate, Seamlessly.</h1>
-                <p class="text-md sm:text-lg mb-8">Experience reliable, high-quality video conferencing designed for modern teams and communities.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded text-base sm:text-lg">Get Started Free</a>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Connect and Collaborate, Seamlessly.</h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">Experience reliable, high-quality video conferencing designed for modern teams and communities.</p>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg">Get Started Free</a>
             </div>
         </section>
 
         <section id="features" class="py-12 sm:py-16 px-4">
             <div class="container mx-auto">
-                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">Discover Our Key Features</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12 text-slate-100">Discover Our Key Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     <!-- Feature Item 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg text-center">
                         <div class="text-blue-500 mb-3 sm:mb-4 inline-block"><span class="iconify" data-icon="mdi:video-high-definition" data-width="40" data-height="40"></span></div>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">High-Quality Video</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 text-slate-100">High-Quality Video</h3>
+                        <p class="text-slate-400 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
                     </div>
                     <!-- Feature Item 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg text-center">
                         <div class="text-blue-500 mb-3 sm:mb-4 inline-block"><span class="iconify" data-icon="mdi:account-group" data-width="40" data-height="40"></span></div>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Seamless Collaboration</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 text-slate-100">Seamless Collaboration</h3>
+                        <p class="text-slate-400 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
                     </div>
                     <!-- Feature Item 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg text-center">
                         <div class="text-blue-500 mb-3 sm:mb-4 inline-block"><span class="iconify" data-icon="mdi:shield-lock" data-width="40" data-height="40"></span></div>
-                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Robust Security</h3>
-                        <p class="text-gray-600 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 text-slate-100">Robust Security</h3>
+                        <p class="text-slate-400 text-sm sm:text-base">Briefly describe the benefit of this amazing feature.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cta" class="bg-gray-200 py-12 sm:py-16 px-4">
+        <section id="cta" class="bg-slate-800 py-12 sm:py-16 px-4">
             <div class="container mx-auto text-center">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg">Join thousands of users enjoying seamless communication. Sign up today!</p>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-10 sm:mb-12 text-slate-100">Ready to Get Started?</h2>
+                <p class="text-slate-300 mb-10 text-base sm:text-lg">Join thousands of users enjoying seamless communication. Sign up today!</p>
                 <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg">Sign Up Now</a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-6 sm:py-8 px-4">
+    <footer class="bg-black text-slate-400 py-6 sm:py-8 px-4">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm">
             <div class="mb-4 md:mb-0 text-center md:text-left">
-                <a href="#" class="hover:text-white mx-2">Terms of Service</a>
-                <span class="text-gray-500 hidden sm:inline">|</span>
-                <a href="#" class="hover:text-white mx-2 block sm:inline mt-1 sm:mt-0">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-200 mx-2">Terms of Service</a>
+                <span class="text-slate-600 hidden sm:inline">|</span> <!-- Adjusted separator color -->
+                <a href="#" class="hover:text-slate-200 mx-2 block sm:inline mt-1 sm:mt-0">Privacy Policy</a>
             </div>
             <div class="mb-4 md:mb-0">
                 &copy; 2023 YourCompanyName. All rights reserved.
             </div>
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="text-gray-300 hover:text-white mx-2"><span class="iconify" data-icon="mdi:facebook" data-width="24" data-height="24"></span></a>
-                <a href="#" class="text-gray-300 hover:text-white mx-2"><span class="iconify" data-icon="mdi:twitter" data-width="24" data-height="24"></span></a>
-                <a href="#" class="text-gray-300 hover:text-white mx-2"><span class="iconify" data-icon="mdi:linkedin" data-width="24" data-height="24"></span></a>
+                <a href="#" class="text-slate-400 hover:text-slate-200 mx-2"><span class="iconify" data-icon="mdi:facebook" data-width="24" data-height="24"></span></a>
+                <a href="#" class="text-slate-400 hover:text-slate-200 mx-2"><span class="iconify" data-icon="mdi:twitter" data-width="24" data-height="24"></span></a>
+                <a href="#" class="text-slate-400 hover:text-slate-200 mx-2"><span class="iconify" data-icon="mdi:linkedin" data-width="24" data-height="24"></span></a>
             </div>
         </div>
     </footer>
